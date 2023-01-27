@@ -87,6 +87,7 @@ public class CakeView extends SurfaceView {
 
     }
 
+
     /**
      * onDraw is like "paint" in a regular Java program.  While a Canvas is
      * conceptually similar to a Graphics in javax.swing, the implementation has
@@ -120,7 +121,8 @@ public class CakeView extends SurfaceView {
         canvas.drawRect(cakeLeft, top, cakeLeft + cakeWidth, bottom, cakePaint);
 
         //Now a candle in the center
-        drawCandle(canvas, cakeLeft + cakeWidth/2 - candleWidth/2, cakeTop);
+        drawCandle(canvas, cakeLeft - 200 + cakeWidth/2 - candleWidth/2, cakeTop);
+        drawCandle(canvas, cakeLeft + 200 + cakeWidth/2 - candleWidth/2, cakeTop);
 
     }//onDraw
 
